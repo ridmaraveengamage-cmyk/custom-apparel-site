@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work & case studies — Threadworks</title>
+<meta name="description" content="Apparel projects we have made for streetwear labels, teams, businesses and events.">
+<meta name="theme-color" content="#2F5BFF">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="index.html"><svg viewBox="0 0 580 140" role="img" aria-label="Threadworks">
+<path d="M14 112 C40 112 46 22 72 22 C98 22 96 68 66 68 C36 68 50 112 104 112" fill="none" stroke="#2F5BFF" stroke-width="9" stroke-linecap="round"/>
+<path d="M106 112 L140 96" stroke="#161616" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="132" cy="99.5" rx="5" ry="2" transform="rotate(-25 132 99.5)" fill="#fff"/>
+<circle cx="14" cy="112" r="8" fill="#FFD43B"/>
+<text x="168" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="66" fill="#161616" letter-spacing="-3" textLength="380" lengthAdjust="spacingAndGlyphs">Threadworks</text>
+<circle cx="560" cy="86" r="8" fill="#2F5BFF"/>
+</svg></a>
+    <div class="pill-nav" id="site-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-dark btn-sm" href="quote.html">Get a quote</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+    </div>
+  </nav>
+</header>
+<main id="main" class="wrap">
+<header class="page-head">
+  <div>
+    <span class="eyebrow in">Our work</span>
+    <h1 class="h1 in d1">Made by us,<br><span class="accent">worn by them.</span></h1>
+  </div>
+  <p class="lead in d2">A selection of projects — from first sample to finished stock. Open any project to read the full case study.</p>
+</header>
+
+<div class="filters in d3" role="group" aria-label="Filter projects" data-filter-target="#projects" data-count-target="#project-count" data-noun="project">
+  <div class="chips">
+    <button class="chip" type="button" data-filter="All" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-filter="Streetwear" aria-pressed="false">Streetwear</button>
+    <button class="chip" type="button" data-filter="Teams" aria-pressed="false">Teams</button>
+    <button class="chip" type="button" data-filter="Corporate" aria-pressed="false">Corporate</button>
+    <button class="chip" type="button" data-filter="Merch" aria-pressed="false">Merch</button>
+    <button class="chip" type="button" data-filter="Hospitality" aria-pressed="false">Hospitality</button>
+  </div>
+  <span id="project-count" class="muted" style="font-size:15px" aria-live="polite"></span>
+</div>
+
+<!-- Cards are generated from assets/js/data.js -->
+<section aria-label="Projects">
+  <div id="projects" class="grid grid-fill" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr))"></div>
+</section>
+
+<section class="panel panel-blue cta reveal">
+  <div>
+    <h2 class="h2">Your project<br>could be next.</h2>
+  </div>
+  <a class="btn btn-yellow" href="quote.html">Start a project</a>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><svg viewBox="0 0 580 140" role="img" aria-label="Threadworks">
+<path d="M14 112 C40 112 46 22 72 22 C98 22 96 68 66 68 C36 68 50 112 104 112" fill="none" stroke="#2F5BFF" stroke-width="9" stroke-linecap="round"/>
+<path d="M106 112 L140 96" stroke="#161616" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="132" cy="99.5" rx="5" ry="2" transform="rotate(-25 132 99.5)" fill="#fff"/>
+<circle cx="14" cy="112" r="8" fill="#FFD43B"/>
+<text x="168" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="66" fill="#161616" letter-spacing="-3" textLength="380" lengthAdjust="spacingAndGlyphs">Threadworks</text>
+<circle cx="560" cy="86" r="8" fill="#2F5BFF"/>
+</svg></a>
+        <p class="muted" style="margin:0;font-size:15px">Custom apparel manufacturing. [ADDRESS], [CITY]</p>
+      </div>
+      <div class="footer-cols">
+        <div><span class="eyebrow">Site</span><a href="services.html">Services</a><a href="products.html">Products</a><a href="work.html">Work</a><a href="about.html">About</a><a href="quote.html">Get a quote</a></div>
+        <div><span class="eyebrow">Contact</span><a href="mailto:[EMAIL]">[EMAIL]</a><a href="tel:[PHONE]">[PHONE]</a><a href="#">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> Threadworks</span><span>Privacy · Terms</span></div>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

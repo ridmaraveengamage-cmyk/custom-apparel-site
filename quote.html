@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a quote — Threadworks</title>
+<meta name="description" content="Tell us what you are making and get pricing and a timeline.">
+<meta name="theme-color" content="#2F5BFF">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="index.html"><svg viewBox="0 0 580 140" role="img" aria-label="Threadworks">
+<path d="M14 112 C40 112 46 22 72 22 C98 22 96 68 66 68 C36 68 50 112 104 112" fill="none" stroke="#2F5BFF" stroke-width="9" stroke-linecap="round"/>
+<path d="M106 112 L140 96" stroke="#161616" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="132" cy="99.5" rx="5" ry="2" transform="rotate(-25 132 99.5)" fill="#fff"/>
+<circle cx="14" cy="112" r="8" fill="#FFD43B"/>
+<text x="168" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="66" fill="#161616" letter-spacing="-3" textLength="380" lengthAdjust="spacingAndGlyphs">Threadworks</text>
+<circle cx="560" cy="86" r="8" fill="#2F5BFF"/>
+</svg></a>
+    <div class="pill-nav" id="site-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-dark btn-sm" href="quote.html" aria-current="page">Get a quote</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+    </div>
+  </nav>
+</header>
+<main id="main" class="wrap">
+<section style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;padding-top:24px">
+  <div class="stack" style="flex:1 1 340px;min-width:0">
+    <div class="stack" style="gap:18px;padding:24px 4px 8px">
+      <span class="eyebrow in">Get a quote</span>
+      <h1 class="h1 in d1" style="font-size:clamp(44px,5.6vw,84px)">Tell us what<br><span class="accent">you’re making.</span></h1>
+      <p class="lead in d2" style="max-width:440px">We reply within [X] business days with pricing, a timeline and fabric suggestions.</p>
+    </div>
+    <div class="card in d3" style="gap:18px">
+      <h2 class="h3" style="font-size:26px">What happens next</h2>
+      <ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px">
+        <li style="display:flex;gap:14px;align-items:center"><span class="chip-num" style="width:34px;height:34px;border-radius:50%;background:#FFD43B;font-size:14px">1</span>We review your brief and any files.</li>
+        <li style="display:flex;gap:14px;align-items:center"><span class="chip-num" style="width:34px;height:34px;border-radius:50%;background:#FFD43B;font-size:14px">2</span>You get a quote and suggested timeline.</li>
+        <li style="display:flex;gap:14px;align-items:center"><span class="chip-num" style="width:34px;height:34px;border-radius:50%;background:#FFD43B;font-size:14px">3</span>Approve it and we start your sample.</li>
+      </ol>
+    </div>
+    <div class="panel panel-green stack in d4" style="padding:28px;border-radius:28px;gap:10px">
+      <h2 class="h3" style="font-size:26px;color:#fff">Prefer to talk?</h2>
+      <a href="mailto:[EMAIL]">[EMAIL]</a><a href="tel:[PHONE]">[PHONE]</a><span style="color:#C9D6CD">[ADDRESS], [CITY] · Visits by appointment</span>
+    </div>
+  </div>
+
+  <div class="form-card in d2" style="flex:2 1 560px;min-width:0">
+    <!-- To make this send for real, add a form service URL to action="" (see README). -->
+    <form id="quote-form" class="form-grid" action="" method="post" enctype="multipart/form-data" novalidate>
+      <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="q-brand">Brand or company</label><input id="q-brand" name="company" type="text" autocomplete="organization"></div>
+      <div class="field"><label for="q-date">Ideal delivery date</label><input id="q-date" name="delivery_date" type="date"></div>
+
+      <fieldset class="full" data-toggle-group>
+        <legend class="legend" style="margin-bottom:12px">What do you need? <span>Choose any</span></legend>
+        <input type="hidden" name="services">
+        <div class="chips">
+          <button class="toggle" type="button" aria-pressed="true">Cut &amp; sew</button>
+          <button class="toggle" type="button" aria-pressed="false">Screen print</button>
+          <button class="toggle" type="button" aria-pressed="false">Embroidery</button>
+          <button class="toggle" type="button" aria-pressed="false">DTG / DTF</button>
+          <button class="toggle" type="button" aria-pressed="false">Private label</button>
+          <button class="toggle" type="button" aria-pressed="false">Sampling only</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="full" data-toggle-group data-single>
+        <legend class="legend" style="margin-bottom:12px">Quantity per style</legend>
+        <input type="hidden" name="quantity">
+        <div class="qty-grid">
+          <button class="toggle" type="button" aria-pressed="false">Under 100</button>
+          <button class="toggle" type="button" aria-pressed="true">100–500</button>
+          <button class="toggle" type="button" aria-pressed="false">500–2,000</button>
+          <button class="toggle" type="button" aria-pressed="false">2,000+</button>
+        </div>
+      </fieldset>
+
+      <div class="field full"><label for="q-msg">Tell us about the project</label><textarea id="q-msg" name="details" rows="5" placeholder="Garment type, fabric, colours, print or embroidery details…"></textarea></div>
+      <div class="field full"><label for="q-file">Tech pack or artwork <span>Optional · PDF, AI, PNG</span></label><input id="q-file" name="files" type="file" multiple accept=".pdf,.ai,.png,.jpg,.jpeg,.svg"></div>
+
+      <div class="form-foot full">
+        <div class="stack" style="gap:4px">
+          <span class="muted" style="font-size:14px">Your designs are kept private. NDA available on request.</span>
+          <span id="form-error" class="error" role="alert"></span>
+        </div>
+        <button class="btn btn-blue" type="submit">Send my request</button>
+      </div>
+    </form>
+
+    <div id="form-thanks" class="thanks" hidden>
+      <span class="thanks-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2F5BFF" stroke-width="2.4" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg></span>
+      <h2 class="h2" tabindex="-1" style="font-size:52px">Thank you.</h2>
+      <p class="lead" style="max-width:420px">We’ve received your request and will be in touch within [X] business days.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-grey" href="work.html">See our work</a>
+        <button id="send-another" class="btn btn-light" type="button" style="border:1px solid #161616">Send another</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><svg viewBox="0 0 580 140" role="img" aria-label="Threadworks">
+<path d="M14 112 C40 112 46 22 72 22 C98 22 96 68 66 68 C36 68 50 112 104 112" fill="none" stroke="#2F5BFF" stroke-width="9" stroke-linecap="round"/>
+<path d="M106 112 L140 96" stroke="#161616" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="132" cy="99.5" rx="5" ry="2" transform="rotate(-25 132 99.5)" fill="#fff"/>
+<circle cx="14" cy="112" r="8" fill="#FFD43B"/>
+<text x="168" y="92" font-family="Inter Tight, sans-serif" font-weight="800" font-size="66" fill="#161616" letter-spacing="-3" textLength="380" lengthAdjust="spacingAndGlyphs">Threadworks</text>
+<circle cx="560" cy="86" r="8" fill="#2F5BFF"/>
+</svg></a>
+        <p class="muted" style="margin:0;font-size:15px">Custom apparel manufacturing. [ADDRESS], [CITY]</p>
+      </div>
+      <div class="footer-cols">
+        <div><span class="eyebrow">Site</span><a href="services.html">Services</a><a href="products.html">Products</a><a href="work.html">Work</a><a href="about.html">About</a><a href="quote.html">Get a quote</a></div>
+        <div><span class="eyebrow">Contact</span><a href="mailto:[EMAIL]">[EMAIL]</a><a href="tel:[PHONE]">[PHONE]</a><a href="#">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> Threadworks</span><span>Privacy · Terms</span></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
