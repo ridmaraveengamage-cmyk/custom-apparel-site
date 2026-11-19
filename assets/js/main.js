@@ -231,6 +231,18 @@
 
   /* ---------- Quote form ---------- */
   var form = $('#quote-form');
+  function showThanks() {
+    form.hidden = true;
+    var thanks = $('#form-thanks');
+    thanks.hidden = false;
+    thanks.classList.add('pop');
+    thanks.querySelector('h2').focus();
+  }
+  if (form && /[?&]sent=1/.test(location.search)) {
+    // Came back from the form service after a successful send.
+    showThanks();
+    if (history.replaceState) history.replaceState(null, '', location.pathname);
+  }
   if (form) {
     form.addEventListener('submit', function (e) {
       var errBox = $('#form-error');
@@ -246,16 +258,20 @@
         return;
       }
       errBox.textContent = '';
-      // No form service is connected yet (see README). Until one is,
-      // show the thank-you message instead of sending.
       if (!form.getAttribute('action')) {
+        // No form service connected: just show the thank-you message.
         e.preventDefault();
-        form.hidden = true;
-        var thanks = $('#form-thanks');
-        thanks.hidden = false;
-        thanks.classList.add('pop');
-        thanks.querySelector('h2').focus();
+        showThanks();
+        return;
       }
+      // Sending to the form service: show progress, then the browser goes there
+      // and comes back to quote.html?sent=1.
+      var btn = $('button[type="submit"]', form);
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    });
+    window.addEventListener('pageshow', function () {
+      var btn = $('button[type="submit"]', form);
+      if (btn) { btn.disabled = false; btn.textContent = 'Send my request'; }
     });
     var again = $('#send-another');
     if (again) again.addEventListener('click', function () {

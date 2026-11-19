@@ -36,7 +36,11 @@ Open `assets/js/data.js` and copy one of the project blocks. Each project automa
 
 ## Quote form
 
-The form checks for a name and email, then shows a thank-you message. **It does not send anything yet.** To receive enquiries, sign up for a form service (for example Formspree, Basin or Netlify Forms) and put the URL it gives you into `action=""` on the `<form>` in `quote.html`.
+Enquiries are emailed by [FormSubmit](https://formsubmit.co) (free, no account). The form checks for a name and email, sends everything (including attached files) to FormSubmit, then FormSubmit sends the visitor back to `quote.html?sent=1`, which shows the thank-you message.
+
+- **First use:** the very first enquiry triggers a one-time "Activate form" email from FormSubmit. Click the button in it, or no enquiries are delivered.
+- **Hide the email address:** after activating, FormSubmit sends a random code. Replace the email address in the form's `action="https://formsubmit.co/…"` in `quote.html` with that code.
+- Spam protection: a hidden "honeypot" field (`_honey`). Settings live in the hidden `_subject`, `_template`, `_captcha` and `_next` fields.
 
 ## Brand
 
