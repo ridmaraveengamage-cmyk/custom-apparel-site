@@ -16,7 +16,16 @@ A plain HTML/CSS/JS website. No build step: open `index.html`, or upload the who
 | `about.html` | Story, values, process, FAQ |
 | `quote.html` | Quote request form |
 
-## Hero slideshow — add your 5 photos
+## Images
+
+All current photos (hero slideshow, product cards, case-study covers, studio photo) were generated with ChatGPT as stand-ins. Swap in real photos of your own work by saving them over the same file names:
+
+- `images/hero-1.jpg` … `hero-5.jpg` — slideshow, portrait 4:5
+- `images/products/*.jpg` — product cards, square
+- `images/work/<project id>.jpg` — case-study covers, landscape 4:3
+- `images/about-studio.jpg` — About page, portrait
+
+## Hero slideshow — swap the 5 photos
 
 Save five photos in the `images/` folder with these exact names:
 

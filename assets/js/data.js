@@ -27,7 +27,7 @@ window.TW_PROJECTS = [
     quantity: '[X] pieces',
     timeline: '[X] weeks',
     shape: 'hoodie', bg: '#E3E9FF', fill: '#2F5BFF',
-    cover: '', gallery: [],
+    cover: 'images/work/capsule.jpg', gallery: [],
     brief: '[What the client came to you with — their goal, deadline, budget and anything that made the project tricky.]',
     approach: '[How you solved it — fabric choice, sampling rounds, decoration method, labels and packaging.]',
     result: '[What was delivered and how it went — on time, sold out, reordered, customer feedback.]',
@@ -43,7 +43,7 @@ window.TW_PROJECTS = [
     services: 'Activewear · Embroidery',
     client: '[Client name]', quantity: '[X] pieces', timeline: '[X] weeks',
     shape: 'tee', bg: '#FFF1B8', fill: '#161616',
-    cover: '', gallery: [],
+    cover: 'images/work/team-kit.jpg', gallery: [],
     brief: '[The brief.]', approach: '[What you did.]', result: '[The result.]',
     quote: '[Client quote.]', quoteBy: '[Name], [Role] at [Client]'
   },
@@ -56,7 +56,7 @@ window.TW_PROJECTS = [
     services: 'Workwear · Embroidery · Private label',
     client: '[Client name]', quantity: '[X] pieces', timeline: '[X] weeks',
     shape: 'tee', bg: '#DCE5DD', fill: '#2F4A3A',
-    cover: '', gallery: [],
+    cover: 'images/work/uniforms.jpg', gallery: [],
     brief: '[The brief.]', approach: '[What you did.]', result: '[The result.]',
     quote: '[Client quote.]', quoteBy: '[Name], [Role] at [Client]'
   },
@@ -69,7 +69,7 @@ window.TW_PROJECTS = [
     services: 'DTG · Screen print',
     client: '[Client name]', quantity: '[X] pieces', timeline: '[X] weeks',
     shape: 'tee', bg: '#161616', fill: '#FFD43B',
-    cover: '', gallery: [],
+    cover: 'images/work/tour-merch.jpg', gallery: [],
     brief: '[The brief.]', approach: '[What you did.]', result: '[The result.]',
     quote: '[Client quote.]', quoteBy: '[Name], [Role] at [Client]'
   },
@@ -82,7 +82,7 @@ window.TW_PROJECTS = [
     services: 'Cut & sew · Embroidery',
     client: '[Client name]', quantity: '[X] pieces', timeline: '[X] weeks',
     shape: 'hoodie', bg: '#F4F4F2', fill: '#2F4A3A',
-    cover: '', gallery: [],
+    cover: 'images/work/cafe-teamwear.jpg', gallery: [],
     brief: '[The brief.]', approach: '[What you did.]', result: '[The result.]',
     quote: '[Client quote.]', quoteBy: '[Name], [Role] at [Client]'
   },
@@ -95,7 +95,7 @@ window.TW_PROJECTS = [
     services: 'Development · Cut & sew',
     client: '[Client name]', quantity: '[X] pieces', timeline: '[X] weeks',
     shape: 'hoodie', bg: '#2F4A3A', fill: '#FFFFFF',
-    cover: '', gallery: [],
+    cover: 'images/work/recycled-basics.jpg', gallery: [],
     brief: '[The brief.]', approach: '[What you did.]', result: '[The result.]',
     quote: '[Client quote.]', quoteBy: '[Name], [Role] at [Client]'
   }
